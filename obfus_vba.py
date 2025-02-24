@@ -7,8 +7,6 @@ import random
 import string
 import sys
 
-import time
-
 from more_itertools import sliced
 
 # Todo: DLL, PS1
