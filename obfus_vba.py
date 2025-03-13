@@ -239,8 +239,8 @@ def main(args):
 
     print("[+] Generated final.vba and fake.vba")
     print("[+] Please, copy fake.vba into a macro")
-    print("[+] Use EvilClippy for stomp final.vba (EvilClippy.exe -s final.vba Doc1.doc)")
-    print("[+] Use OfficePurge for purgue the macro (OfficePurge.exe -d word -f Doc1_EvilClippy.doc -m ThisDocument)")
+    print("[+] Use EvilClippy for stomp final.vba (EvilClippy.exe -g -s fake.vba -r Doc1.doc)")
+    print("[+] Use OfficePurge for purgue the macro (OfficePurge.exe -d word -f Doc1.doc -m ThisDocument)")
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='VBA Obfuscator')
